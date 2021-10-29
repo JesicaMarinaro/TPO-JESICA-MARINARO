@@ -1,0 +1,141 @@
+h1 {
+   font-size: xx-large; 
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+ 
+h2, h3 {
+    font-size: x-large; 
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p {
+    font-size: x-large; 
+    font-family: 'Open Sans Condensed', sans-serif;   
+}
+
+body {
+    background-color: wheat;
+}
+
+.fa-thumbtack {
+    color: tomato;
+}
+
+.fa-envelope {
+    color: white;
+}
+
+a {
+    color:antiquewhite;
+    border-color:aquamarine;
+    border-style:initial;
+    border-width: medium;
+    transition: ease-in-out;
+    transition-duration: 5s;
+    animation-name:cambiarColor;
+    animation-duration: 5s;
+}
+
+a:hover {
+    background-color:pink !important;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    body {
+        background: orangered;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    body {
+        background: rgb(66, 87, 17);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    body {
+        background: rgb(115, 119, 173);
+    }
+    }
+
+
+}
+#grid-container {
+display: grid;
+grid-template-areas:none;
+grid-gap: 10px;
+background: #2196F3;
+padding: 10px;
+}
+
+/* DESKTOP */
+
+@media only screen and (max-width: 700px) {
+    body {
+        background-color: rgb(160, 74, 12);
+    }
+
+.body_register {
+background-color: seashell;
+}
+
+    .header_register {
+        grid-area: header_register;
+        border-color: black;
+        border-style: dotted;
+    }
+    .social_register {
+        grid-area: social_register;
+        border-color: black;
+        border-style: dotted;
+    }
+
+    .email_register {
+        grid-area: email_register;
+        border-color: black;
+        border-style: dotted;
+    }
+
+    .grid-container_register {
+        display: grid;
+        grid-template-areas:
+        "header_register header_register"
+        "social_register email_register"
+        "social_register email_register";
+        border-color: red;
+        border-style: solid;
+        grid-gap: 0px;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
+
+
+
+
+/* MOBILE */
+
+
+
+@media only screen and (max-width: 500px) {
+
+    .grid-container_register {
+        display: grid;
+        grid-template-areas:
+        "header_register header_register"
+        "social_register email_register"
+        "email_register social_register";
+        border-color: red;
+        border-style: solid;
+        grid-gap: 0px;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+}
+
